@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:padding="16dp"
+  tools:context=".ui.dashboard.DashboardFragment">
+
+  <TextView
+    android:id="@+id/app_description"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:text="This app helps you manage your passwords securely and efficiently. It was created to address the common issue of managing multiple passwords across various platforms."
+    android:textAlignment="center"
+    android:textSize="16sp"
+    android:padding="8dp"
+    android:background="@drawable/outlined_background"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+    android:id="@+id/reason_behind_app"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:text="Reason behind the app: Our team recognized the need for a secure and user-friendly solution to store and manage passwords. With this app, users can easily access their passwords and ensure they are protected."
+    android:textAlignment="center"
+    android:textSize="16sp"
+    android:padding="8dp"
+    android:background="@drawable/outlined_background"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/app_description" />
+
+  <TextView
+    android:id="@+id/team_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="24dp"
+    android:text="Team Developers"
+    android:textAlignment="center"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/reason_behind_app" />
+
+  <LinearLayout
+    android:id="@+id/team_layout"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@drawable/outlined_background"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/team_title">
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Riefa Khania Putri, NIM 181351169"
+      android:textSize="16sp" />
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Ikmal Saepur R, NIM 211351063"
+      android:textSize="16sp" />
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Vika Fatnawati, NIM 211351148"
+      android:textSize="16sp" />
+
+  </LinearLayout>
+
+  <ImageView
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/team_layout"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:alpha=".5"
+    android:src="@drawable/padlock"
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
